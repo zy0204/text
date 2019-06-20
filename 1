@@ -1,25 +1,14 @@
-[james@linux ~]$ mkdir test
-[james@linux ~]$ cd test
-[james@linux test]$ git init
-Initialized empty Git repository in /home/users/james/test/.git/
-[james@linux test]$ echo "this is file 1" > 1.txt
-[james@linux test]$ echo "this is file 2" > 2.txt
+[james@linux test]$ echo "test line 2 of file 1" >> 1.txt
+[james@linux test]$ echo "second line of file 2" >> 2.txt
 [james@linux test]$ git add 1.txt 2.txt
-[james@linux test]$ git commit -m "this is first commit"
-[master (root-commit) 944e15d] this is first commit
+[james@linux test]$ git commit -m "2nd commit"
+[master 532b002] 2nd commit
  2 files changed, 2 insertions(+)
- create mode 100644 1.txt
- create mode 100644 2.txt
-[james@linux test]$ git remote add origin git@github.com:XXXX/test.git
-[james@linux test]$ git push -u origin master
-The authenticity of host 'github.com (192.30.255.112)' can't be established.
-RSA key fingerprint is 16:27:ac:a5:76:28:2d:36:63:1b:56:4d:eb:df:a6:48.
-Are you sure you want to continue connecting (yes/no)? yes
-Warning: Permanently added 'github.com,192.30.255.112' (RSA) to the list of known hosts.
-Counting objects: 4, done.
+[james@linux test]$ git push
+Counting objects: 7, done.
 Delta compression using up to 8 threads.
 Compressing objects: 100% (2/2), done.
-Writing objects: 100% (4/4), 277 bytes, done.
+Writing objects: 100% (4/4), 334 bytes, done.
 Total 4 (delta 0), reused 0 (delta 0)
 To git@github.com:zhangyunkai/test.git
- * [new branch]      master -> master
+   944e15d..532b002  master -> master
